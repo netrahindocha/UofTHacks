@@ -131,6 +131,7 @@ nav ul li a:hover{
 }
 
 .photoEditor img{
+  width: 50%;
   border: 5px solid rgb(146, 148, 160);
 }
 
@@ -178,4 +179,35 @@ nav ul li a:hover{
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+/* ALBUM SECTION */
+
+.albumSection{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.albumSection img{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 25px;
+}
+
+.albumWrap{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#albumTitle{
+  /* border: 1px solid black; */
+  margin: 25px;
+}
+
+#albumSlogan{
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 18px;
 }

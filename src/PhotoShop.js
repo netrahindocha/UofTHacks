@@ -1,30 +1,12 @@
 import React from "react";
+import Album from "./Album";
 
 const PhotoShop = () => {
+
+    let selectedImage = "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg";
+
     return (
         <div>
-
-            <div className="header">
-
-                <div className="logoSection">
-                    <p id="title">TIME MACHINE</p>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">PhotoBooth</a>
-                        </li>
-                        <li>
-                            <a href="">Album</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div className="userUtils">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-            </div>
 
             <main>
 
@@ -36,10 +18,10 @@ const PhotoShop = () => {
 
                 <div className="cover">
                     <div className="photoEditor">
-                        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
+                        <img src={selectedImage} alt="" />
                         <div className="photoUtils">
                             <button>Upload Picture</button>
-                            <button>Save to Album</button>
+                            <button onClick={() => {<Album selectedImage={selectedImage}/>}}>Save to Album</button>
                         </div>
                     </div>
                     <div className="filterSpace">
