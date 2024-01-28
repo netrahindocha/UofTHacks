@@ -3,11 +3,6 @@ import React from "react";
 const PhotoShop = () => {
     return (
         <div>
-            <div className="dismiss">
-                <i class="fa-solid fa-xmark"></i>
-                <span>Your beautiful photo diary is here. Shop Move 2 now.</span>
-                <a href="">Shop</a>
-            </div>
 
             <div className="header">
 
@@ -18,23 +13,15 @@ const PhotoShop = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="">PhotoShop</a>
+                            <a href="">PhotoBooth</a>
                         </li>
                         <li>
-                            <a href="">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="">Support</a>
-                        </li>
-                        <li>
-                            <a href="">Radio</a>
+                            <a href="">Album</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div className="userUtils">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
                     <i class="fa-solid fa-user"></i>
                 </div>
             </div>
@@ -44,12 +31,26 @@ const PhotoShop = () => {
                 <div className="content">
                     <p class="largeFont">Professional and Pixel Perfect Photo Diary</p>
                     <p class="elaboration">Explore perfect filters for your nostalgic memories and events to make it more colorful and lively</p>
-                    <button id="explore">Explore product <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    <p id="slogan">Let's Go Back In Time!</p>
                 </div>
 
                 <div className="cover">
-                    <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
-                    <input type="file" name="" id="" value="Add Image" />
+                    <div className="photoEditor">
+                        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
+                        <div className="photoUtils">
+                            <button>Upload Picture</button>
+                            <button>Save to Album</button>
+                        </div>
+                    </div>
+                    <div className="filterSpace">
+                        <p id="chooseFilter">Choose Your Filter</p>
+                        <div className="filterOptions">
+                            <button class="filters">1800s (B&W)</button>
+                            <button class="filters">1950s (Sepia)</button>
+                            <button class="filters">1980s (XXX)</button>
+                            <button class="filters">2000s (XXX)</button>
+                        </div>
+                    </div>
                     
                     {/* <img className="smallImg" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg" alt="" /> */}
                     {/* <img className="smallImg" src="https://i.pinimg.com/originals/43/db/46/43db4682a57bbddf864719d9403919eb.jpg" alt="" /> */}

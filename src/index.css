@@ -13,28 +13,6 @@ code {
     monospace;
 }
 
-/* DISMISS SECTION */
-
-.dismiss{
-  padding: 15px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  color: white;
-}
-
-.dismiss a{
-  color: white;
-}
-
-.fa-xmark{
-  color: white;
-  transform: scale(1.3);
-  cursor: pointer;
-  padding: 2px 5px;
-}
-
 /* HEADER SECTION */
 
 .header{
@@ -59,7 +37,7 @@ code {
 
 nav ul{
   display: flex;
-  margin-right: 100px;
+  margin-right: 250px;
 }
 
 nav ul li{
@@ -91,21 +69,13 @@ nav ul li a:hover{
   border-radius: 50%;
   background-color: black;
   color: white;
+  padding: 9px 10px;
+  transform: scale(1.1);
 }
 
 .userUtils i:hover{
   background-color: rgb(230, 230, 230);
   color: black;
-}
-
-.fa-magnifying-glass{
-  padding: 9px 9px;
-  transform: scale(1.1);
-}
-
-.fa-bag-shopping, .fa-user{
-  padding: 9px 10px;
-  transform: scale(1.1);
 }
 
 /* CONTENT SECTION */
@@ -130,47 +100,82 @@ nav ul li a:hover{
   color: rgb(107, 107, 107);
 }
 
-/* EXPLORE BUTTON */
-
-#explore{
-  font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: 500;
-  border: 1px solid grey;
-  background-color: rgb(230, 230, 230);
-}
-
-#explore:hover{
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  border: 1px solid black;
-}
-
-.material-symbols-outlined{
-  font-size: 14px;
-  padding-left: 5px;
-  vertical-align: middle;
+#slogan{
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 0;
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* COVER SECTION */
 
 .cover{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin: 40px;
   position: relative;
 }
 
-.cover img{
-  width: 50em;
+.cover .photoEditor img{
+  width: 45em;
 }
 
-.cover input{
-  position: absolute;
-  top: 50%;
+/* PHOTO EDITOR SECTION */
+
+.photoEditor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.photoEditor img{
+  border: 5px solid rgb(146, 148, 160);
+}
+
+.photoUtils button{
+  margin: 0px 20px;
+  margin-top: 25px;
+  padding: 7px 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(224, 224, 224);
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
+}
+
+/* FILTER OPTIONS */
+
+#chooseFilter{
+  font-size: 26px;
+}
+
+.filterSpace{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterOptions{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.filters{
+  padding: 7px 50px;
+  margin: 40px 50px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgb(224, 224, 224);
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
+}
+
+.filters:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
