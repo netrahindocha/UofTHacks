@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Album from './Album';
 import './App.css';
 import Header from './Header';
@@ -7,13 +8,16 @@ import {createBrowserRouter, RouterProvider, Route, Link} from "react-router-dom
 
 function App() {
 
+  const [imageURL, setImageURL] = useState("");
+
+
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
         <>
         <Header/>
-        <PhotoShop/>
+        <PhotoShop setImageURL={setImageURL}/>
         </>
       )
     },
@@ -22,7 +26,7 @@ function App() {
       element: (
         <>
         <Header/>
-        <Album/>
+        <Album imageURL={imageURL}/>
         </>
       )
     }

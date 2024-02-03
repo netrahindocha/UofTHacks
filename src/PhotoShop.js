@@ -1,7 +1,7 @@
 import React from "react";
 import Album from "./Album";
 
-const PhotoShop = () => {
+const PhotoShop = ({setImageURL}) => {
 
     let selectedImage = "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg";
 
@@ -11,8 +11,8 @@ const PhotoShop = () => {
             <main>
 
                 <div className="content">
-                    <p class="largeFont">Professional and Pixel Perfect Photo Diary</p>
-                    <p class="elaboration">Explore perfect filters for your nostalgic memories and events to make it more colorful and lively</p>
+                    <p className="largeFont">Professional and Pixel Perfect Photo Diary</p>
+                    <p className="elaboration">Explore perfect filters for your nostalgic memories and events to make it more colorful and lively</p>
                     <p id="slogan">Let's Go Back In Time!</p>
                 </div>
 
@@ -21,16 +21,16 @@ const PhotoShop = () => {
                         <img src={selectedImage} alt="" />
                         <div className="photoUtils">
                             <button>Upload Picture</button>
-                            <button onClick={() => {<Album selectedImage={selectedImage}/>}}>Save to Album</button>
+                            <button onClick={() => {setImageURL(selectedImage)}}>Save to Album</button>
                         </div>
                     </div>
                     <div className="filterSpace">
                         <p id="chooseFilter">Choose Your Filter</p>
                         <div className="filterOptions">
-                            <button class="filters">1800s (B&W)</button>
-                            <button class="filters">1950s (Sepia)</button>
-                            <button class="filters">1980s (XXX)</button>
-                            <button class="filters">2000s (XXX)</button>
+                            <button className="filters">1800s (B&W)</button>
+                            <button className="filters">1950s (Sepia)</button>
+                            <button className="filters">1980s (XXX)</button>
+                            <button className="filters">2000s (XXX)</button>
                         </div>
                     </div>
                     

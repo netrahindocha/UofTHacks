@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Album = (props) => {
+const Album = ({imageURL}) => {
 
-    console.log(props);
+    console.log({imageURL});
     
     return (
         <>
@@ -12,7 +12,7 @@ const Album = (props) => {
         </div>
         
         <div className="albumSection">
-            <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+            <img src={imageURL || "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} alt="" />
         </div>
         </>
     )
